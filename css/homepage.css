@@ -1,0 +1,287 @@
+
+/*homepage header*/
+
+.header-container-background-beige{
+  background-image: url(../images/fond_graphique.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+
+}
+
+
+.header-container-animation{
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#title{
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+}
+
+#title_steep_1{
+  /*border: 2px solid violet;*/
+  position: absolute;
+  z-index: 2;
+}
+
+
+#title_steep_2{
+  /*border: 2px solid violet;*/
+  position: absolute;
+  z-index: 3;
+}
+
+#title_steep_3{
+  /*border: 2px solid violet;*/
+  position: absolute;
+  -o-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  z-index: 4;
+}
+
+#title_steep_4{
+  /*border: 2px solid violet;*/
+  position: absolute;
+  -o-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  z-index: 5;
+}
+
+#title_steep_5{
+  /*border: 2px solid violet;*/
+  position: absolute;
+  z-index: 6;
+}
+
+#title_steep_6{
+  /*border: 2px solid violet;*/
+  position: absolute;
+  z-index: 7;
+}
+
+#title_last_steep{
+  position: absolute;
+  z-index: 8;
+
+}
+
+#auteur{
+  position: absolute;
+  bottom: 25%;
+  font-style: italic;
+}
+
+
+
+.block-homepage-img-1{
+  background-image:url(../images/homepage_photo1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-position: center;
+/*  position: relative;
+  z-index:100;*/
+}
+
+
+.block-homepage-img-2{
+  background-image:url(../images/homepage_photo2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-position: center;
+}
+
+
+.block-homepage-img-3{
+  background-image:url(../images/homepage_photo3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-position: center;
+}
+
+
+
+@media only screen and (min-width: 1200px){
+
+/*homepage header*/
+.header-container-animation img{
+    width: 40%;
+}
+
+/*homepage body*/
+.section-first-height{
+  height:60vh;
+}
+
+.section-text-height{
+  height:60vh;
+}
+
+.section-third-height{
+  height:60vh;
+}
+
+.section-end-row-height{
+  height:40vh;
+}
+
+.padding-texte-variable{
+  padding : 0rem 2rem;
+}
+
+.block-color1{
+  background: linear-gradient(135deg, rgba(238,9,121,0.7)0%, rgba(254,101,7,0.7)80%);
+}
+
+#title-philosphie{
+  font-size: 2.5em;
+}
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+/*homepage header*/
+.header-container-animation img{
+    width: 40%;
+}
+
+/*homepage body*/
+.section-first-height{
+  height:60vh;
+}
+
+.section-text-height{
+  height:60vh;
+}
+
+.section-third-height{
+  height:60vh;
+}
+
+.section-end-row-height{
+  height:40vh;
+}
+
+.padding-texte-variable{
+  padding : 0rem 2rem;
+}
+
+.block-color1{
+  background: linear-gradient(135deg, rgba(238,9,121,0.7)0%, rgba(254,101,7,0.7)80%);
+}
+
+#title-philosphie{
+  font-size: 2em;
+}
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+/*homepage header*/
+.header-container-animation img{
+  width: 60%;
+}
+
+/*homepage body*/
+.section-first-height{
+  height:75vh;
+}
+
+.section-text-height{
+  height:75vh;
+}
+
+.section-end-row-height{
+  height:25vh;
+}
+
+.padding-texte-variable{
+  padding : 0rem 2rem;
+}
+
+.block-color2{
+  background: linear-gradient(135deg, rgba(238,9,121,0.7)0%, rgba(254,101,7,0.7)80%);
+}
+
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+/*homepage header*/
+.header-container-animation img{
+    width: 70%;
+}
+
+/*homepage body*/
+.section-first-height{
+  height:40vh;
+}
+
+.section-end-row-height{
+  height:40vh;
+}
+
+.padding-texte-variable{
+  padding : 2rem;
+}
+.container{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.block-color1{
+  background: linear-gradient(135deg, rgba(238,9,121,0.7)0%, rgba(254,101,7,0.7)80%);
+}
+
+}
+
+@media only screen and (max-width: 575px) {
+
+/*homepage header*/
+.header-container-animation img{
+    width: 70%;
+}
+
+/*homepage body*/
+.section-first-height{
+  height:40vh;
+}
+.section-end-row-height{
+  height:40vh;
+}
+.padding-texte-variable{
+  padding : 2rem;
+}
+.container{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.block-color1{
+  background: linear-gradient(135deg, rgba(238,9,121,0.7)0%, rgba(254,101,7,0.7)80%);
+}
+}
+
+
