@@ -16,6 +16,12 @@
 
 .background-color-eshop{
   background: linear-gradient(90deg, #7ea2a8 20%, #64919e 80%);
- /* background: linear-gradient(90deg, rgb(204,204,178)60%, rgb(218,218,140)90%);*/
+}
+
+@media only screen and (max-width: 767px) {
+
+.background-header-eshop{
+  background-position: 18% 50%;
+}
 }
 

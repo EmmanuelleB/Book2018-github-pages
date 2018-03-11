@@ -15,7 +15,16 @@
 }
 
 .background-color-lucce{
-  background: linear-gradient(90deg, rgb(173,1,51)60%, rgb(225,0,66)90%);
+  background: linear-gradient(90deg, #ad0133 60%, #e10042 90%);
 }
 
+@media only screen and (max-width: 767px) {
+
+.background-color-lucce{
+  background: linear-gradient(90deg, #e10042 60%, #e92348 90%);
+}
+.background-header-lucce{
+    background-position: 60% 50%;
+}
+}
 

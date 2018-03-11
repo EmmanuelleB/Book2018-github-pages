@@ -15,7 +15,12 @@
 }
 
 .background-color-designers{
-  background: linear-gradient(90deg, #b5a480 20%, #DECBA4 80%);
- /* background: linear-gradient(90deg, rgb(204,204,178)60%, rgb(218,218,140)90%);*/
+  background: linear-gradient(90deg, #b5a480 20%, #bcac8a 80%);
+}
+
+@media only screen and (max-width: 767px) {
+.background-header-designers{
+  background-position: 40% 50%;
+}
 }
 

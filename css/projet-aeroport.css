@@ -15,8 +15,18 @@
 }
 
 .background-color-aeroport{
-  background: linear-gradient(90deg, #8d8379 20%, #a5a199 80%);
-  /*background: linear-gradient(90deg, rgb(176,169,159)60%, rgb(141,132,122)90%);*/
+  background: linear-gradient(90deg, #978e85 20%, #a79e95 80%);
 
+}
+
+@media only screen and (max-width: 767px) {
+
+.background-color-aeroport{
+  background: linear-gradient(90deg, #9f9993 20%, #a79e95 80%);
+}
+
+.background-header-aeroport{
+  background-position: 18% 50%;
+}
 }
 
