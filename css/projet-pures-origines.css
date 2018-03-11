@@ -18,3 +18,9 @@
   background: linear-gradient(90deg, rgb(145, 125,105)60%, rgb(123,104,93)90%);
 }
 
+@media only screen and (max-width: 767px) {
+
+.background-color-pures-origines{
+  background: linear-gradient(90deg, #a99786 60%, #9f8d7b 90%);
+}
+}
