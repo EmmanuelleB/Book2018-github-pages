@@ -87,17 +87,4 @@
 }
 
 
-#element-fleche-org{
-  position: absolute;
-  left: 25%;
-  top:30%;
-  z-index: 2;
-}
-
-#element-fleche-rge{
-  position: absolute;
-  left: 23%;
-  top:40%;
-  z-index: 3;
-}
 
