@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Emmanuelle Baron Designer</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700|Rubik:300,400,700" rel="stylesheet">
+</head>
+
+<body>
+
+<style>
+
+body{
+   background-color: green;
+}
+
+
+#carrousel-list{
+  position: relative;
+  top:200px;
+}
+
+</style>
+
+<div class="carrousel">
+    <ul>
+    <li><img src="images/projet_detour_img1.jpg" /></li>
+    <li><img src="images/projet_detour_img2.jpg"/></li>
+    <li><img src="images/projet_detour_img3.jpg" /></li>
+    </ul>
+
+    <div class="text-center">
+    <span>_</span>
+    <span>_</span>
+    <span>_</span>
+    </div>
+</div>
+
+<div class="carrousel2">
+    <ul>
+      <li><img src="images/projet_detour_img1.jpg" /></li>
+      <li><img src="images/projet_detour_img2.jpg"/></li>
+      <li><img src="images/projet_detour_img3.jpg" /></li>
+      <li><img src="images/projet_cityzen_img3.jpg" /></li>
+      <li><img src="images/projet_cityzen_img4.jpg" /></li>
+    </ul>
+
+    <div class="text-center">
+    <span>_</span>
+    <span>_</span>
+    <span>_</span>
+    <span>_</span>
+    <span>_</span>
+    </div>
+</div>
+
+
+
+
+
+
+<script>
+
+$(document).ready(function(){
+
+var $carrousel = $('.carrousel'), // on cible le bloc du carrousel
+    $img = $('.carrousel img'), // on cible les images contenues dans le carrousel
+    $span = $('.carrousel span'), // on cible les images contenues dans le carrousel
+    indexImg = $img.length - 1, // on définit l'index du dernier élément
+    indexSpan = $span.length - 1, // on définit l'index du dernier élément
+    i = 0, // on initialise un compteur
+    $currentImg = $img.eq(i); // enfin, on cible l'image courante, qui possède l'index i (0 pour l'instant)
+    $currentSpan = $span.eq(i); // enfin, on cible l'image courante, qui possède l'index i (0 pour l'instant)
+
+
+$img.css('display', 'none'); // on cache les images
+$span.css('color', 'white'); // on cache les images
+$currentImg.css('display', 'block'); // on affiche seulement l'image courante
+$currentSpan.css('color', 'black');
+
+
+var $carrousel2 = $('.carrousel2'), // on cible le bloc du carrousel
+    $img2 = $('.carrousel2 img'), // on cible les images contenues dans le carrousel
+    $span2 = $('.carrousel2 span'), // on cible les images contenues dans le carrousel
+    indexImg2 = $img2.length - 1, // on définit l'index du dernier élément
+    indexSpan2 = $span2.length - 1, // on définit l'index du dernier élément
+    j = 0, // on initialise un compteur
+    $currentImg2 = $img2.eq(j); // enfin, on cible l'image courante, qui possède l'index i (0 pour l'instant)
+    $currentSpan2 = $span2.eq(j); // enfin, on cible l'image courante, qui possède l'index i (0 pour l'instant)
+
+
+$img2.css('display', 'none'); // on cache les images
+$span2.css('color', 'white'); // on cache les images
+$currentImg2.css('display', 'block'); // on affiche seulement l'image courante
+$currentSpan2.css('color', 'black');
+
+
+function slide(){
+    setTimeout(function(){ // on utilise une fonction anonyme
+
+        if(i < indexImg && indexSpan ){ // si le compteur est inférieur au dernier index
+      i++; // on l'incrémente
+  }
+  else{ // sinon, on le remet à 0 (première image)
+      i = 0;
+  }
+
+  $img.css('display', 'none');
+  $span.css('color', 'white');
+
+  $currentImg = $img.eq(i);
+  $currentSpan = $span.eq(i);
+  $currentImg.css('display', 'block');
+  $currentSpan.css('color', 'black');
+
+
+  slide(); // on oublie pas de relancer la fonction à la fin
+
+    }, 3000); // on définit l'intervalle à 3000 millisecondes (3s)
+}
+
+slide(); // enfin, on lance la fonction une première fois
+
+
+function slide2(){
+    setTimeout(function(){ // on utilise une fonction anonyme
+
+        if(j < indexImg2 && indexSpan2 ){ // si le compteur est inférieur au dernier index
+      j++; // on l'incrémente
+  }
+  else{ // sinon, on le remet à 0 (première image)
+      j = 0;
+  }
+
+
+  $img2.css('display', 'none');
+  $span2.css('color', 'white');
+
+  $currentImg2 = $img2.eq(j);
+  $currentSpan2 = $span2.eq(j);
+  $currentImg2.css('display', 'block');
+  $currentSpan2.css('color', 'black');
+
+  slide2(); // on oublie pas de relancer la fonction à la fin
+
+    }, 3000); // on définit l'intervalle à 3000 millisecondes (3s)
+}
+
+slide2(); // enfin, on lance la fonction une première fois
+
+
+
+
+
+
+
+
+});
+
+</script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
